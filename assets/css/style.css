@@ -1,0 +1,416 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+header {
+  position: relative;
+}
+/*---------------- nav -------------------------*/
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  position: fixed;
+  z-index: 1;
+}
+header nav h1 {
+  color: #ffff;
+}
+header nav .links {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+header nav .links .li a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+/*--------------------------------------------*/
+
+/*--------------- hero styles ----------------*/
+header .hero {
+  background-color: #1abc9c;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .hero img {
+  margin: 20px 0px;
+  width: 12.5rem; /* 200px*/
+  height: 12.5rem;
+}
+header .hero h1 {
+  font-size: 2.5rem; /*40px*/
+  color: #ffff;
+  margin-bottom: 20px;
+}
+header .hero p {
+  font-size: 1.5rem;
+  color: #ffff;
+}
+.hero .container2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.56rem;    /*25px*/
+
+}
+.hero .container2 .star::before,
+.hero .container2 .star::after {
+    content: "";
+    display: block;
+    height: 0.312rem;   /* 5px*/
+    background-color: white; /* Line color */
+}
+.hero .container2 .star {
+    font-size: 2.5rem; /* Star size 40px */
+    color: white; /* Star color */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:1.3rem;
+}
+/*-----------------------------------------------------*/
+
+/*-----------------------portfolio---------------------*/
+.protfolio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.protfolio h2 {
+  font-size: 2.5rem; /*40px*/
+  color: #1a252f;
+  margin-bottom: 25px;
+}
+.protfolio .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.protfolio .container .cards {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.protfolio .container .cards img {
+  height: 100px;
+  width: 100px;
+}
+.container .two {
+  background-color: #1fa4b6;
+}
+.container .one {
+  background-color: #ba4c63;
+}
+.container .three {
+  background-color: black;
+}
+.container .four {
+  background-color: #1d83c1;
+}
+.container .five {
+  background-color: #1037b5;
+}
+.container .six {
+  background-color: #ccb2a3;
+}
+.protfolio .container2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.56rem;    /*25px*/
+}
+.protfolio .container2 .star::before,
+.protfolio .container2 .star::after {
+    content: "";
+    display: block;
+    height: 0.312rem;   /* 5px*/
+    background-color: #1a252f;
+}
+.protfolio .container2 .star {
+    font-size: 2.5rem; /* Star size 40px */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:1.3rem;
+    color:#1a252f
+}
+/*-----------------------------------------------------*/
+
+/*---------------- about ----------------------------*/
+.about {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1abc9c;
+}
+.about h2 {
+  font-size: 2.5rem; /*40px*/
+  color: #ffff;
+  margin-bottom: 25px;
+}
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.about .container p {
+  width: 20%;
+  font-size: 1.25rem; /*20px*/
+  color: #ffff;
+}
+.about button {
+  margin-top: 50px;
+  width: 12.5rem; /*200px*/
+  height: 3.75rem; /*60 px*/
+  font-size: 1.125rem; /*18px*/
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #1abc9c;
+  color: white;
+}
+.about .container2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.56rem;    /*25px*/
+ 
+}
+.about .container2 .star::before,
+.about .container2 .star::after {
+    content: "";
+    display: block;
+    height: 0.312rem;   /* 5px*/
+    background-color: white; /* Line color */
+}
+.about .container2 .star {
+    font-size: 2.5rem; /* Star size 40px */
+    color: white; /* Star color */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:1.3rem;
+}
+/*------------------------------------------------*/
+
+/*------------------Contact-me --------------------*/
+.contact-me {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me h2 {
+  font-size: 2.5rem; /*40px*/
+  color: #1a252f;
+  margin-bottom: 25px;
+}
+.contact-me .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.contact-me .form .input,
+.input-text-area {
+  width: 50%;
+  font-size: 1.25rem; /* 20px*/
+  margin-bottom: 10px;
+  height: 3.75rem; /*60px*/
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+}
+.input-text-area {
+  height: 6.25rem; /*100px*/
+}
+.contact-me .send {
+  height: 40px;
+  width: 100px;
+  background-color: #1abc9c;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.protfolio .container2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 1.56rem;    /*25px*/
+}
+.contact-me .container2 .star::before,
+.contact-me .container2 .star::after {
+    content: "";
+    display: block;
+    height: 0.312rem;   /* 5px*/
+    background-color: #1a252f;
+}
+.contact-me .container2 .star {
+    font-size: 2.5rem; /* Star size 40px */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:1.3rem;
+    color:#1a252f
+}
+/*------------------------------------------------*/
+
+/*-------------------- footer ---------------------*/
+
+.footer {
+  height: 20vh;
+  background-color: #2c3e50;
+  color: #ffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer-child .icons-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-box .icons{
+    margin:0 0.625rem;  /*10px*/
+    height:2.5rem;   /*40px*/
+    width:2.5rem;    /*40px*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid white;
+    border-radius: 50%;
+}
+.icons a {
+   text-decoration: none;
+   color:white;
+}
+.footer .footer-child {
+  width: 20%;
+}
+.footer h3 {
+  font-size: 1.25rem; /*20px*/
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer .p {
+  font-size: 1.25rem; /*20px*/
+}
+
+.footer-child-two {
+  width: 20%;
+}
+.footer .footer-child-two h3,
+p {
+  text-align: center;
+}
+/*------------------------------------------------*/
+
+/*-------------------- end ---------------------*/
+.end {
+  height: 5vh;
+  color: #ffff;
+  background-color: #1a252f;
+  display: flex;
+  font-size: 0.875rem; /*14px*/
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1402px) {
+  .about {
+    height: max-content;
+    padding: 50px;
+  }
+
+  .about .container p {
+    width: 100%;
+  }
+  .protfolio .container .cards {
+    flex-direction: column;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  .portfolio {
+    height: max-content;
+  }
+  header nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .links {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  header nav ul {
+    margin: 10px;
+  }
+  .about .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about .container p {
+    width: 100%;
+  }
+
+  .protfolio .container .cards {
+    height: 150px;
+    width: 150px;
+  }
+  .protfolio .container .cards img {
+    height: 75px;
+    width: 75px;
+  }
+  .about,
+  .contact-me {
+    height: max-content;
+    padding: 50px;
+  }
+  .footer h3 {
+    margin: 20px 0;
+  }
+  .footer {
+    flex-direction: column;
+    height: max-content;
+    padding: 20px;
+  }
+
+  html {
+    font-size: 8px;
+  }
+}
